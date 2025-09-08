@@ -1,0 +1,16 @@
+body {
+    display: flex;               /* Enable flex layout */
+    justify-content: center;     /* Center horizontally */
+    align-items: center;         /* Center vertically */
+    height: 50vh;               /* Make body full viewport height */
+    margin: 0;              /* Remove default body margin */
+}
+.hello {
+    width: 300px;                 /* form width */
+    padding: 20px;
+    border: 2px solid #333;       /* border around form */
+    border-radius: 10px;          
+    background-color: #fff;      
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+    text-align: center;           
+}
