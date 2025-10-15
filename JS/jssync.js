@@ -1,26 +1,31 @@
 function register(){
-    console.log("register end");
+    waitforfiveseconds();
+    console.log("Register end");
 }
-
 function sendEmail(){
-    console.log('send email end');
+    waitforfiveseconds();
+    console.log("Email sent end");
 }
-
 function login(){
-    console.log("login end");
+    waitforfiveseconds();
+    console.log("Login end");
 }
-
-function  getData(){
-    console.log("get data end");
+function getUserData(){
+    waitforfiveseconds();
+    console.log("Got user data end");
 }
-function displayData(){
-    console.log("display data end");
+function displayUserData(){
+    waitforfiveseconds();
+    console.log("User data displayed end");
 }
-
+function waitforfiveseconds(){
+    const start=new Date().getTime()+5000;
+    while(new Date().getTime()<start ){;
+}
+}
 register();
 sendEmail();
-login();
-getData();
-displayData();
-
-console.log('call other end');
+login();    
+getUserData();
+displayUserData();
+console.log("All tasks done");

@@ -1,1 +1,3 @@
-console.log(sum());//NaN
+ pr.then(function(res){
+  return res.json();
+})

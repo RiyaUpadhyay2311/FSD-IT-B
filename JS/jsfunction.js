@@ -33,15 +33,18 @@ console.log(add(34,2));
 // })();
 
 
-function hello(user,callback){
-   console.log(`hello ${user}`);
-   callback();
-}
+// function hello(user,callback){
+//    console.log(`hello ${user}`);
+//    callback();
+// }
 
-hello('riya',function(){
-   console.log(add(5,5))});
+// hello('riya',function(){
+//    console.log(add(5,5))});
    
-hello('riya',()=>{
-   console.log(add(4,5))});
+// hello('riya',()=>{
+//    console.log(add(4 ,5))});
+
+
+
 
 
