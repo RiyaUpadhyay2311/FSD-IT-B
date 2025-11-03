@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="css\form.css" />
+  </head>
+  <style>
+    .myform{
+    position: absolute;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color:beige;
+    height: 500px;
+    width: 25%;
+    justify-content: space-evenly;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding-left: 10px;
+  
+    
+}
+  </style>
+
+  <body bgcolor="beige">
+    <form action="">
+      <div class="myform" >
+        <h1 style="align-self: center;"><i><U>REGISTER HERE</U></i></h1>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter Your Name" />
+        </div>
+        <div>
+          <label for="mobile">Mobile Number : </label>
+          <input type="number" id="mobile" placeholder="Enter Your MobileNo." />
+        </div>
+        <div>
+          <label for="Email">Email</label>
+          <input
+            type="Email"
+            id="Email"
+            placeholder="Enter Your Email"
+            required
+          />
+        </div>
+        <div>
+          <label for="dob">Date-Of-Birth</label>
+          <input type="date" id="dob" placeholder="Enter Your Date-Of-Birth" />
+        </div>
+        <div>
+          <label for="gender">Gender</label>
+          <input type="radio" name="gender" />Male
+          <input type="radio" name="gender" />Female
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <input
+            type="text-area"
+            id="address"
+            placeholder="Enter Your address"
+          />
+        </div>
+
+        <div>
+          <label for="branch">Branch</label>
+          <select id="branch" name="branch">
+            <option value="IT">IT</option>
+            <option value="CSE">CSE</option>
+            <option value="ME">ME</option>
+          </select>
+        </div>
+        
+        <div>
+          <label for="semester">Semester</label>
+          <select id="semester" name="semester">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; width: 25vw;">
+          <button type="login" style="background-color: rgb(128, 83, 0); width:10vw;">Register</button>
+          <button type="reset" style="background-color: rgb(255, 187, 0) ;width: 10vw;">Reset</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

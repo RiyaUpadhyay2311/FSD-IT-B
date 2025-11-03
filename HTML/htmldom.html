@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html dom example</title>
+    <script>
+        function addpara(){
+            const para = document.createElement("p");
+            para.textContent="this is new paragraph";
+            para.style.color="Red";
+            document.body.appendChild(para);
+
+        }
+    </script>
+</head>
+<body>
+     <button onclick="addpara()">add para</button>    
+    <p>This is old paragraph</p>
+    
+</body>
+</html>
