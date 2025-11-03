@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LIST POF USERS</h1>
+    <table>
+          <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>ip address</th>
+                <th>mac address</th>
+            </tr>
+          </thead>
+          <tbody>
+             <script>
+const username = "RiyaUpadhyay2311"
+const url = `https://api.github.com/users/${username}`;
+
+const pr = fetch(url);
+
+ pr.then(function(res){
+  return res.json();//so that data not give undefined
+})
+.then((data)=>{
+    let user = document.querySelector("th");
+    user.innerHTML= `<h2>${data.login}</h2>`;
+    console.log("Data:",data);
+})
+.catch((error)=>{
+    console.log("Error=",error)
+})
+             </script>
+          </tbody>
+    </table>
+</body>
+</html>-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dom Example</title>
+    <script>
+        function addpara(){
+            
+            const id=document.querySelectorAll("div");
+            // id.appendChild(para);
+            id.forEach((val)=>{
+                const para=document.createElement("p");
+            para.textContent="This is new Paragraph";
+            para.style.color="Green";
+                val.appendChild(para);
+            //   console.log(val);
+            })
+        }
+    </script>
+</head>
+<body>
+    <button onclick="addpara()">Add Para</button>
+   <p>This is old paragraph</p>
+   <div id="para1"></div> 
+   <div id="para2"></div> 
+   <div id="para3"></div> 
+   
+   <!-- export.module = add -->
+    fro multiple
+    import {add,mul} from 
+</body>
+</html>
+
